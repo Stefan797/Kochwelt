@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Einbinden der allgemeinen style.css sowie der style_recipe.css. Letztere stylt CSS Elemente, welche nur in recipe.html benötigt werden. -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_recipe.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Für jedes Rezept muss eine andere script-Datei eingebunden werden. -->
+    <script src="recipe6.js"></script>
+    <title>Kochwelt Rezept</title>
+</head>
+
+<body onload="loadTaco()">
+
+  <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+
+  <!-- Einbinden des headers (Navigationsmenü) -->
+
+  <iframe src="header.html" frameborder="0" width="100%" height="115px" ;></iframe>
+
+  <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+
+  <div class="container border-section-top">
+
+    <div class="mt-medium mb-medium">
+
+      <h1 id="recipe-title"></h1>
+
+    </div>
+
+
+
+    <div class="info-line">
+
+      <div id="time-info" class="time-info">
+        <p>30 min</p>
+      </div>
+
+      <div id="difficulty-info" class="difficulty-info mr-small ml-small">
+        <p>simpel</p>
+      </div>
+
+      <div id="calendar-info" class="calendar-info">
+        <p>20.01.2021</p>
+      </div>
+
+    </div>
+
+
+
+    <div class="ingredient-calculation mt-medium mb-medium">
+
+      <p class="mr-small">Zutaten für</p>
+
+      <input class="input-number-of-portions" id="portionfield" value="4" type="number"> </input>
+
+      <button onclick="calculate()" class="btn-P">Portionen</button>
+
+    </div>
+
+    <div class="ingredients-list">
+
+      <table class="lines">
+        <tbody id="ingredients">
+        
+        <!-- Hier wird über die JavaScript Funktion der Code generiert und die Zutatentabelle erstellt -->
+
+        </tbody>
+      </table>
+
+    </div>
+
+    <div class="preparation-description">
+
+      <h2>Zubereitung</h2>
+
+      <div class="z-line">
+
+        <div class="time2-info mr-small">
+          <p id="time2-info">ca. 30 Minuten</p>
+        </div>
+
+        <div class="time2-info ml-small">
+          <p id="time3-info" >Gesamtzeit ca. 30 Minuten</p>
+        </div>
+
+      </div>
+
+      <p class="prep-text" id="preparation-text"></p>
+
+    </div>
+
+    <div id="food-picture" class="food-picture">
+
+      <!-- Das Bild wird über die JavaScript Funktion eingefügt. -->
+
+    </div>
+
+    <div class="headline-end">
+
+      <h5>Rezept erstellt von</h5>
+
+    </div>
+
+    <div id="profile" class="profile-name mb-large">
+
+      <!-- Profilbild und Name werden über die JavaScript Funktion eingefügt. -->
+
+    </div>
+
+  </div>
+
+  <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+
+  <!-- Einbinden des footers -->
+
+  <iframe src="footer.html" frameborder="0" width="100%" height="293px;" ;></iframe>
+
+  <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+
+</body>
+
+</html>

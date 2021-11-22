@@ -1,0 +1,523 @@
+/* PAUL start */
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+}
+
+button {
+    font-family: inherit;
+}
+
+
+/* Grundsätzlicher Abstand des Contents nach links und rechts; Zentrierung mittig */
+
+.container {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+h1,
+h2 {
+    font-weight: 500 !important;
+    font-size: 2em;
+}
+
+.border-section-bottom {
+    border-bottom: 1px solid lightgrey;
+}
+
+.border-section-top {
+    border-top: 1px solid lightgrey;
+}
+
+
+/* Margin (Klassifizierung in small, medium, large sowie top (t), bottom (b), left (l), right (r) */
+
+.m-small {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.m-medium {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.m-large {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.mt-small {
+    margin-top: 10px;
+}
+
+.mt-medium {
+    margin-top: 25px;
+}
+
+.mt-large {
+    margin-top: 50px;
+}
+
+.mb-small {
+    margin-bottom: 10px;
+}
+
+.mb-medium {
+    margin-bottom: 25px;
+}
+
+.mb-large {
+    margin-bottom: 50px;
+}
+
+.ml-small {
+    margin-left: 10px;
+}
+
+.ml-medium {
+    margin-left: 25px;
+}
+
+.ml-large {
+    margin-left: 50px;
+}
+
+.mr-small {
+    margin-right: 10px;
+}
+
+.mr-medium {
+    margin-right: 25px;
+}
+
+.mr-large {
+    margin-right: 50px;
+}
+
+
+/* Padding (Klassifizierung in small, medium, large sowie top (t), bottom (b), left (l), right (r) */
+
+.p-small {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.p-medium {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.p-large {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.pt-small {
+    padding-top: 5px;
+}
+
+.pt-medium {
+    padding-top: 10px;
+}
+
+.pt-large {
+    padding-top: 20px;
+}
+
+.pb-small {
+    padding-bottom: 5px;
+}
+
+.pb-medium {
+    padding-bottom: 10px;
+}
+
+.pb-large {
+    padding-bottom: 20px;
+}
+
+.pl-small {
+    padding-left: 5px;
+}
+
+.pl-medium {
+    padding-left: 10px;
+}
+
+.pl-large {
+    padding-left: 20px;
+}
+
+.pr-small {
+    padding-right: 5px;
+}
+
+.pr-medium {
+    padding-right: 10px;
+}
+
+.pr-large {
+    padding-right: 20px;
+}
+
+
+/* PAUL end */
+
+
+/* ################################################################################################################################# */
+
+
+/* STEFAN start */
+
+.menu {
+    font-size: 135%;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.link a:hover {
+    border-bottom: 4px solid #d31414;
+    transition: 125ms;
+}
+
+.header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 110px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.link-decoration {
+    text-decoration: none;
+    color: black
+}
+
+.left-logo {
+    height: 90px;
+}
+
+
+/* STEFAN end */
+
+
+/* ################################################################################################################################# */
+
+
+/* BENJAMIN start */
+
+.m1container {
+    width: inherit;
+    /* 100vw geändert auf inherit von Paul, damit Inhalt nicht breiter als der .container ist */
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CurrentPicture img {
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.contentCurrentPicture {
+    width: 450px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.m1Text {
+    min-width: 235px;
+    height: 180px;
+}
+
+.button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 8px 19px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background: #D32F2F;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #cc1515;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+/* M2 CONTAINER */
+
+.m2container {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-headline {
+    width: inherit;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.m2picturecontainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    /* flex-wrap:wrap; hinzugefügt. Diese Eigenschaft sorgt dafür, dass die 8 Bilder ordentlich verteilt werden und man nicht mehrere Container à 3 Bilder braucht, sondern ein Container à 8 Bilder ausreicht. (Paul) */
+}
+
+
+/* Zudem ist der Mittelteil dann automatisch schon responsive, ohne dass man weiter was machen muss. */
+
+.m2Picture img {
+    width: 250px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 10px;
+    -webkit-transition: all 125ms linear;
+    -moz-transition: all 125ms linear;
+    -ms-transition: all 125ms linear;
+    -o-transition: all 125mss linear;
+    transition: all 125ms linear;
+}
+
+.m2Picture img:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: all 125ms ease-in-out;
+}
+
+.m2Picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* M3 CONTAINER */
+
+.m3container {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.m3Picture img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.m3Picturecontainer {
+    width: 100%;
+    min-height: 240px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.m3Text {
+    max-width: 620px;
+    height: auto;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* BENJAMIN end */
+
+
+/* ################################################################################################################################# */
+
+
+/* DESTAY start */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(54, 54, 54);
+    color: white;
+}
+
+.socials-container img:hover {
+    box-shadow: 0px 0px 20px #b80606;
+    background-color: #b80606;
+    border-radius: 20%;
+    transition: 125ms;
+}
+
+.socials-container {
+    height: 100px;
+}
+
+.footer-links {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links:hover {
+    color: #cc1515;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: 125ms;
+}
+
+.links-container {
+    height: 60px;
+    text-align: center;
+}
+
+
+/* DESTAY end */
+
+
+/* Responsive  Design */
+
+@media(max-width: 980px) {
+    .m1container {
+        width: inherit;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .CurrentPicture img {
+        max-width: 400px;
+        height: auto;
+        border-radius: 10px;
+        margin-top: 40px;
+    }
+    /* Folgende Klassen machen den Header responsive */
+    .header {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .left-logo {
+        height: 70px;
+    }
+}
+
+@media(max-width: 700px) {
+    .m3Picturecontainer {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .m3container>div {
+        height: unset;
+    }
+    .m3Text {
+        padding-left: unset;
+    }
+    /* Folgende Klassen machen den Header responsive */
+    .menu {
+        display: none;
+    }
+    .left-logo {
+        height: 90px;
+    }
+}
+
+@media(max-width: 500px) {
+    .CurrentPicture img {
+        max-width: 300px;
+    }
+    .m1Text {
+        width: 150px;
+        height: 280px;
+        padding-left: 20px;
+    }
+    .contentCurrentPicture {
+        width: inherit;
+        height: 380px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 320px) {
+    .left-logo {
+        height: 65px;
+        margin-top: 25px;
+        margin-left: 18px;
+    }
+    .CurrentPicture img {
+        max-width: 250px;
+    }
+    .contentCurrentPicture {
+        height: 420px;
+        width: inherit;
+        margin-left: 0;
+    }
+    .m1Text {
+        width: 100px;
+        height: 320px;
+        padding-left: 20px;
+    }
+}
+
+@media(max-width: 290px) {
+    .socials-container {
+        height: 130px;
+        max-width: 179px;
+    }
+    .instagram img {
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    .socials img {
+        margin-bottom: 10px;
+        margin-left: 9px;
+    }
+}

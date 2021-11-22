@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Kontakt</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        header {
+            background-color: white;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 60vh;
+        }
+        
+        .kontakt {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgb(217, 215, 215);
+        }
+        
+        input {
+            font-family: 'Quicksand', sans-serif;
+            height: 30px;
+            width: 400px;
+            border-top: 0px;
+            border-left: 0px;
+            border-right: 0px;
+            border-color: rgb(90, 88, 88);
+            border-width: 3px;
+            margin: 14px;
+            border-radius: 3%;
+            outline: none;
+        }
+        
+        textarea {
+            font-family: 'Quicksand', sans-serif;
+            height: 200px;
+            width: 400px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            border-color: rgb(90, 88, 88);
+            border-width: 3px;
+            border-radius: 4%;
+            outline: none;
+        }
+        
+        @media(max-width: 500px) {
+            textarea {
+                width: 250px;
+            }
+            input {
+                width: 250px;
+                height: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <iframe src="header.html" frameborder="0" width="100%" height="115px" ;></iframe>
+    <!--Einbindung Header-->
+
+    <div class="kontakt border-section-top">
+        <h1>Kontaktiere uns</h1>
+        <p>Bitte fülle alle Felder aus</p>
+    </div>
+    <form class="kontakt">
+        <!-- action="http://gruppe-53.developerakademie.com/send_mail/send_mail.php" method="POST"-->
+        <input name="name" placeholder="Dein Name">
+        <input email="email" placeholder="Deine E-Mail">
+        <input subject="subject" placeholder="Dein Thema">
+
+        <textarea name="message" placeholder="Deine Nachricht an uns"></textarea>
+
+        <button class="button mt-small mb-large" type="submit">Senden</button>
+    </form>
+
+    <iframe src="footer.html" frameborder="0" width="100%" height="293px;" ;></iframe>
+    <!--Einbindung Footer-->
+</body>
+
+</html>
