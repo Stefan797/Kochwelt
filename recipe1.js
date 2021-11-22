@@ -17,7 +17,10 @@ let product = [
 
 
 /* Funktion, welche das jeweilige Rezept lädt. Funktionsname und Werte müssen jeweils angepasst werden. */
-
+/**
+ * Loads the hmtl content for the recipe page.
+ * Documentation only for the recipe1 file. Documentation the same for everyone.
+ */
 function loadAvocadoStrawberry() {
 
     document.getElementById('recipe-title').innerHTML = "Avocado - Erdbeeer - Vorspeise";
@@ -62,7 +65,7 @@ function loadAvocadoStrawberry() {
 /* Funktion zum Berechnen der Portionen */
 /* Annahme: alle Rezepte werden zunächst für 4 Portionen angelegt */
 /**
- * This function calculates the amount of ingredients 
+ * This function calculates the amount of ingredients. 
  */
 function calculate() {
     let portionfield = +document.getElementById('portionfield').value;
